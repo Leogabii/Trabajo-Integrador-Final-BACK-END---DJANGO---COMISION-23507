@@ -94,20 +94,12 @@ WSGI_APPLICATION = 'appBeerPub.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'sqlite': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'beerpub',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'sql_mode': 'traditional',
-        }
+        'NAME': 'leogabii$beerpub',
+        'USER': 'leogabii',
+        'PASSWORD': 'comision23507',
+        'HOST': 'leogabii.mysql.pythonanywhere-services.com',
     }
 }
 
