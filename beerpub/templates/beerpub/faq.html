@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <title>BEER PUB</title>
+
+
+    {# Archivos #}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static './css/registro.css' %}"> 
+    {% comment %} {# Cargamos la librería #}
+    {% load django_bootstrap5 %}
+ 
+    {# CSS Bootstrap #}
+    {% bootstrap_css %}  {% endcomment %}
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click',() => { document.querySelector('nav').classList.toggle('show');});
+    </script>
+  </head>
+
+  <body>
+    <div class="menu-btn">
+
+        <i class="iconoBoton"><img src="{% static './media/img/btn-amburg.png' %}" alt="" width="55em" height="55em"></i>
+    </div>
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                
+            </div>
+            <!-- <div>
+                
+                <h2 class="cabecera">
+                    Pub -  Cerveceria
+                </h2>
+            </div> -->
+        </header>
+
+        <!-- aca va el show para que aparezca con js el menu -->
+        <!-- <nav>
+        <div> <h1> <a href="crear"> Home</a></h1></div>
+        <div> <h1> <a href="#">Acerca de </a></h1></div>
+        <div> <h1> <a href="#"> Localizacion</a></h1></div>
+        <div> <h1> <a href="#">Contacto</a></h1></div>
+        <div> <h1> <a href="#">Faq</a></h1></div>
+        
+    </nav> -->
+    <!--Comienzo de la barra de navegación-->
+    <nav>
+        <div> <h1> <a href="{% url 'index' %}"> Home</a></h1></div>
+        <div> <h1> <a href="{% url 'acercade' %}">Acerca de </a></h1></div>
+        <div> <h1> <a href="{% url 'localizacion' %}"> Localizacion</a></h1></div>
+        <div> <h1> <a href="{% url 'contacto' %}">Contacto</a></h1></div>
+        <div> <h1> <a href="{% url 'faq' %}">Faq</a></h1></div>
+        <div> <h1> <a href="{% url 'leer' %}">Gestion</a></h1></div>
+      
+</nav>
+ <!--Fin de la barra de navegación-->
+
+
+
+        <!-- esto es segun profe ocaña, ir probando la barra de navegacion con las diferentes
+        alternativas, pero creo que esta es la que anda -->
+
+  
+
+
+        <div style="width:5px;height:10px;"></div>
+
+</div> 
+<hr>
+<main>
+<section>
+<article class="faq1">
+    <div class="btn-faq1">
+        <h1 class="h1-faq">¿Aceptan todos los medios de pago?</h1>
+    </div>  
+    <div  id="id-faq1" class="div-faq1 " style="visibility: hidden;">
+        <p class="pfaq1">Operamos con todos los medios de pago existentes, como ser Tarjetas de credito y debito, codigo QR, Tranferencias por Mercado Pago o cualquier otro tipo de Billetera virtual</p>
+    </div>
+</article>
+
+<article class="faq2">
+    <div class="btn-faq2">
+        <h1 class="h1-faq">¿Cual es el horario de cierre?</h1>
+    </div>  
+    <div  id="id-faq2" class="div-faq2 " style="visibility: hidden;">
+        <p class="pfaq2">Nuestro horario es, todos los dias <span><b>de 22:00 hs a 7:00 hs</b></span></p>
+    </div>
+</article>
+
+<article class="faq3">
+    <div class="btn-faq3">
+        <h1 class="h1-faq">¿Cuentan con Delivery?</h1>
+    </div>  
+    <div  id="id-faq3" class="div-faq3 " style="visibility: hidden;">
+        <h1 style="color: greenyellow; padding-left: 5px;">Delivery y Take away</h1>
+        <p class="pfaq3"> <img src="{% static './media/img/WhatsApp.png' %}" alt="icono WhatsApp" width="30px" height="30px">  +54 1122334455</p>
+    </div>
+</article>
+
+</section>
+</main>
+<footer class="center">
+    
+    <p>Síguenos en nuestras redes. </p>
+    <a class="redsoc"  href="https://www.twitter.com" target="_blank">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.facebook.com" target="_blank">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.pinterest" target="_blank">
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.instagram.com" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.linkedin.com" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+<p>Derechos reservados @2023</p>
+<div style="width:5px;height:10px;"></div>
+</footer>
+<script src="{%static './js/menu.js'%}"></script>
+</body>
+</html>

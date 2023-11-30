@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  {% comment %} {# Cargamos la librería #}
+  {% load django_bootstrap5 %}
+
+  {# CSS Bootstrap #}
+  {% bootstrap_css %}  {% endcomment %}
+
+  {# Archivos #}
+  {% load static %}
+  <link rel="stylesheet" href="{% static './css/contacto.css'%}">
+      <link rel="stylesheet" href="{% static './css/style.css' %}">
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+  <title>BEER PUB</title>
+<style>
+  .field-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field-wrap > label {
+    display: block;
+  }
+  
+  .field-wrap > input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+</style>
+<script>
+  document.querySelector('.menu-btn').addEventListener('click',() => { document.querySelector('nav').classList.toggle('show');});
+</script>
+</head>
+<body>
+    <div class="menu-btn">
+      <i class="iconoBoton"><img src="{% static './media/img/btn-amburg.png' %}" alt="" width="55em" height="55em"></i>
+    
+      
+  </div>
+  <div class="contenedor">
+    <header>
+      <div class="logo">
+                
+      </div>
+    </header>
+      <div class="container-lg">
+        <!-- ver si banca un include nav.html como hice en el footer -->
+   <!--Comienzo de la barra de navegación-->
+   <nav>
+    <div> <h1> <a href="{% url 'index' %}"> Home</a></h1></div>
+    <div> <h1> <a href="{% url 'acercade' %}">Acerca de </a></h1></div>
+    <div> <h1> <a href="{% url 'localizacion' %}"> Localizacion</a></h1></div>
+    <div> <h1> <a href="{% url 'contacto' %}">Contacto</a></h1></div>
+    <div> <h1> <a href="{% url 'faq' %}">Faq</a></h1></div>
+    <div> <h1> <a href="{% url 'leer' %}">Gestion</a></h1></div>
+  
+  
+</nav>
+<!--Fin de la barra de navegación-->
+<div style="width:5px;height:10px;"></div>
+      </div>
+      <div style="width:5px;height:10px;"></div>
+    </div>
+    <hr>
+    <main>
+      <div class="btn-faq1">
+      </div>  
+</main>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<!-- <div
+class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+ </div> -->
+ <div class="container-lg">
+  <div id="carouselExample" class="carousel slide">
+
+
+<br/>
+
+</div>
+<br/>    <br/>
+</div>
+<div class="form">
+      
+  <p style="text-align: center;color: white; font-size:larger">Contactanos!
+  </p>
+  
+  <div class="tab-content">
+    <div id="signup">   
+      <p style="text-align: center;  font-size:smaller;color: white; ">Dejanos tu consulta y te responderemos cuanto antes
+      </p>
+      <br/>
+      <!-- cambiar el endpoint por uno nuevo este no anda -->
+      <form action="https://formspree.io/f/xvojadgo" method="POST"  >
+ 
+          <div class="field-wrap">
+            <label>
+              Nombre<span class="req">*</span>
+            </label>
+            <input type="text" required autocomplete="off" id="nombre" name="nombre" pattern="[a-zA-Z]+" />
+
+          </div>
+      
+          <div class="field-wrap">
+            <label>
+              Apellido<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off" pattern="[a-zA-Z]+" />
+          </div>
+         <div class="field-wrap">
+          <label>
+            Email<span class="req">*</span>
+          </label>
+          <input type="email"required autocomplete="off"/>
+        </div>
+        <div class="field-wrap">
+          <label>
+            Edad
+          </label>
+          <input type="number" required autocomplete="off" />
+        </div>
+          <div class="field-wrap">
+          <label>
+            Teléfono
+          </label>
+          <input type="text" required autocomplete="off" />
+        </div>
+        <div class="field-wrap">
+          <label>
+            Cerveza preferida
+          </label>
+          <select name="cerveza" class="field-wrap">
+            <option value="ipa">IPA</option>
+            <option value="stout">Stout</option>
+            <option value="porter">Porter</option>
+            <option value="pale_ale">Pale Ale</option>
+            <option value="amber_ale">Amber Ale</option>
+            <option value="witbier">Witbier</option>
+            <option value="weizenbier">Weizenbier</option>
+            <option value="scottish_ale">Scottish Ale</option>
+            <option value="saison">Saison</option>
+            <option value="lager">Lager</option>
+          </select>
+        </div>
+        </div>
+        <div class="field-wrap">
+          <textarea name="msg" rows="10" cols="50" placeholder="Escriba su comentario aquí..." required></textarea>
+        </div>     
+        <button type="submit" class="button button-block">Enviar</button>
+      </form>
+      
+    </div>
+
+    </div>
+    
+  </div><!-- tab-content -->
+  
+</div> <!-- /form -->			
+
+<footer class="center">
+  <div style="width:5px;height:10px;"></div>
+  <p>Síguenos en nuestras redes. </p>
+  <div style="width:5px;height:10px;"></div>
+  <a class="redsoc"  href="https://www.twitter.com" target="_blank">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+  </a>
+  <a class="redsoc" href="https://www.facebook.com" target="_blank">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
+  <a class="redsoc" href="https://www.pinterest" target="_blank">
+      <i class="fa fa-pinterest" aria-hidden="true"></i>
+  </a>
+  <a class="redsoc" href="https://www.instagram.com" target="_blank">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+  <a class="redsoc" href="https://www.linkedin.com" target="_blank">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+  </a>
+  <div style="width:5px;height:10px;"></div>
+  <p>Derechos reservados @2023</p>
+<div style="width:5px;height:10px;"></div>
+</footer>
+
+<script src="{% static './js/menu.js' %}"></script>
+<script src="{% static './js/contacto.js' %}"></script>
+</body>
+</html>

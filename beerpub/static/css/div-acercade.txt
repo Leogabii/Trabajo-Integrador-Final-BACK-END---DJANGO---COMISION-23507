@@ -1,0 +1,45 @@
+<div class="div-acercade">
+    <ul class="ul-acercade">
+        <li class="li-acercade" style="align-content: center;">
+            <img src="./media/img/louis-hansel-vm4g1MBZUv4-unsplash.jpg" alt="" class="tamaño_acercade">
+            <h3 style="padding-top: 10px;">BEER pub</h3>
+            <p class="p-acercade">El mejor Bar, ubicado en la zona de Palermo, es uno de los locales mas climatizados el cual disfruta de un ambiente divertido con una decoración espectacular, 
+                su ambiente moderno te asegura una noche divertida única e inolvidable. Su estructura se presenta con una capacidad  
+                aproximadamente para 150 personas y una espectacular infraestructura en sonido, iluminación y video imagen.
+            </p>
+           
+        </li>
+        <li class="li-acercade">
+            <img src="./media/img/florencia-viadana-mI61X5I-jKQ-unsplash.jpg" alt="" class="tamaño_acercade">
+            <h3 style="padding-top: 10px;">DIVERSION</h3>
+            <p class="p-acercade"> En BEER pub lo encontraras todo, Alta tecnología,
+                decoración vanguardista, son mezclas originales para que bailes desde tu mesa o en la pista. En su barra te ofrecerán una inmensa variedad de cócteles 
+                que son preparados por barman profesionales, licores variados, bebidas internacionales, nacionales y cerveza. Cuenta con un muy buen servicio al cliente, servicio de estacionamiento. 
+                </p>
+        </li>
+        <li class="li-acercade">
+            <img src="./media/img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" alt="" class="tamaño_acercade">
+            <h3 style="padding-top: 10px;">CERVEZAS</h3>
+            <ul style ="list-style-type: square;" class="ul-acercade-sinborde">
+                <li>Todas las canillas te esperan.</li>
+                 <li>Cerveza Cartago Lather,
+                <li>Cerveza Artesanal Argentina,
+                <li>"Comunidad Cervecera" Alma Mater - Cerveza Artesanal.</li>
+                -
+            </li> Happy Hour hasta las 21 hs.</p></li> 
+            </ul>
+    </li>
+        <li class="li-acercade" style="padding-right: .5rem;">
+            <img src="./media/img/jon-parry-C8eSYwQkwHw-unsplash.jpg" alt="" class="tamaño_acercade">
+            <h3 style="padding-top: 10px;">AMBIENTE</h3>
+            <ul style ="list-style-type: square;" class="ul-acercade-sinborde">
+             
+                <li>Ambiente calido,
+                <li>Amplio espacio de reunion,</li>
+                <li>Gran variedad de tragos y cervezas artesanales,</li>
+                <li>Cuenta con buena iluminacion acorde al ambiente.</li>
+            </li>
+        </ul>
+        </li>
+    </ul>
+</div>

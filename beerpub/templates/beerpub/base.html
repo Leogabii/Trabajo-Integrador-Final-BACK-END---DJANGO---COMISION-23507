@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <title>BEER PUB</title>
+
+    {# Cargamos la librería #}
+    {% load django_bootstrap5 %}
+ 
+    {# CSS Bootstrap #}
+    {% bootstrap_css %} 
+
+    {# Archivos #}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static './css/registro.css' %}"> 
+
+
+  </head>
+
+  <body>
+    <div class="menu-btn">
+
+        <i class="iconoBoton"><img src="{% static './media/img/btn-amburg.png' %}" alt="" width="55em" height="55em"></i>
+    </div>
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                
+            </div>
+            <!-- <div>
+                
+                <h2 class="cabecera">
+                    Pub -  Cerveceria
+                </h2>
+            </div> -->
+        </header>
+
+        <!-- aca va el show para que aparezca con js el menu -->
+        <!-- <nav>
+        <div> <h1> <a href="crear"> Home</a></h1></div>
+        <div> <h1> <a href="#">Acerca de </a></h1></div>
+        <div> <h1> <a href="#"> Localizacion</a></h1></div>
+        <div> <h1> <a href="#">Contacto</a></h1></div>
+        <div> <h1> <a href="#">Faq</a></h1></div>
+        
+    </nav> -->
+    <!--Comienzo de la barra de navegación-->
+    <nav>
+        <div> <h1> <a href="{% url 'index' %}"> Home</a></h1></div>
+        <div> <h1> <a href="{% url 'acercade' %}">Acerca de </a></h1></div>
+        <div> <h1> <a href="{% url 'localizacion' %}"> Localizacion</a></h1></div>
+        <div> <h1> <a href="{% url 'contacto' %}">Contacto</a></h1></div>
+        <div> <h1> <a href="{% url 'faq' %}">Faq</a></h1></div>
+      
+</nav>
+ <!--Fin de la barra de navegación-->
+
+
+
+        <!-- esto es segun profe ocaña, ir probando la barra de navegacion con las diferentes
+        alternativas, pero creo que esta es la que anda -->
+
+  
+
+
+
+
+</div>
+
+{% block contenido %}
+{% endblock contenido %}
+
+
+{% include "./footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+    {
+        "id":1,"nombre":"me parece que consume la api",
+    "contacto":"bueno fijate",
+    "experiencia":"mas que la api, todo esto lo consume a uno",
+    "img":"http://127.0.0.1:8000/beerpub/superman_5pkTGND.jpg",
+    "created_at":"2023-11-29T16:36:39.145505Z",
+    "updated_at":"2023-11-29T16:36:39.145505Z"
+},
+    {"id":2,"nombre":"Marcelo Tinelli","contacto":"probando la carga de imagen","experiencia":"Muy buena la atencion","img":"http://127.0.0.1:8000/beerpub/totoro_drT4q9n.webp","created_at":"2023-11-29T16:51:30.081132Z","updated_at":"2023-11-29T16:51:30.081132Z"},
+    {"id":3,"nombre":"Marcelo Tinelli","contacto":"marcelito@excanal13.ar","experiencia":"mas que la api, todo esto lo consume a uno","img":"http://127.0.0.1:8000/beerpub/fabio-alves-_fLgxjACz5k-unsplash.jpg","created_at":"2023-11-29T16:53:47.385293Z","updated_at":"2023-11-29T16:53:47.385293Z"},
+    {"id":4,"nombre":"Marcelo Tinelli","contacto":"beerbar","experiencia":"mas que la api, todo esto lo consume a uno","img":"http://127.0.0.1:8000/beerpub/logo_cerveza_ZIusSFd.jpg","created_at":"2023-11-29T16:54:12.309004Z","updated_at":"2023-11-29T16:54:12.309004Z"}
+]

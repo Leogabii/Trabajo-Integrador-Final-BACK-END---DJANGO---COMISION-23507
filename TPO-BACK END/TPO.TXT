@@ -1,0 +1,77 @@
+Trabajo Integrador Final y Muestra de Proyectos DJANGO
+Se actualiza automáticamente cada 5 minutos
+Trabajo Integrador Final y Muestra de Proyectos
+
+Consigna para el Trabajo Integrador Final
+
+
+Objetivo: El objetivo de este trabajo práctico es desarrollar una aplicación web que utilice una API REST(ideal) o Usando el modelo MVT en el backend y un frontend interactivo para realizar operaciones CRUD en una base de datos MySQL.
+
+
+Instrucciones:
+
+
+Parte 1:         Back-end, Construyendo una API RESTful con Python, Django y MySQL
+
+
+Utilizando Python, Django y MySQL, deberás crear una API REST o usando con el modelo MVT de django que cumpla con los siguientes requisitos:
+
+Implementar el protocolo HTTP y los métodos GET, POST, PUT y DELETE.
+Utilizar formato JSON para enviar y recibir datos desde la base de datos.
+La API deberá permitir la creación, lectura, actualización y eliminación de
+registros en la base de datos.
+
+
+Para desarrollar el backend, sigue los pasos del tutorial para el Back que
+encontrarás en el siguiente enlace:  Repositorio : DJANGO
+
+
+Sube el back-end a un hosting que permita correr Python y Django, por ejemplo,
+PythonAnyWhere. Para eso, sigue los pasos del siguiente tutorial: DJANGO DEPLOY
+
+Documentación del repositorio del backend, junto con la información del front end.
+
+
+Parte 2: Front-end, Creando un CRUD con HTML, CSS, Bootstrap, JavaScript y Vue
+
+
+Deberás crear un CRUD (Create, Read, Update, Delete) que interactúe con la API REST que has desarrollado en el back-end. Utiliza las siguientes tecnologías:
+HTML, CSS y Bootstrap para la estructura y diseño de la interfaz.
+JavaScript y Vue.js para la interacción con la API REST y la manipulación de los datos.
+Thunder Client, POSTMAN o una herramienta similar para testear la API y asegurarte de su correcto funcionamiento. (Opcional)
+
+Sigue los pasos del tutorial para el Front que encontrarás en el siguiente enlace:
+Tutorial Creando un CRUD con HTML, CSS, Bootstrap, JavaScript y Vue para desarrollar el front-end de tu aplicación.
+
+
+Sube el front-end a un hosting, por ejemplo, Netlify o GitHub Pages. (siempre y cuando se realice en forma de microservicios)
+
+
+
+
+Taller: Muestra de Proyectos
+
+
+Te invitamos a participar en el Taller de Muestra de Proyectos, que se llevará a cabo a partir del 5 de Diciembre. Durante este taller, tendrás la oportunidad de presentar tu proyecto desarrollado a lo largo del curso y demostrar todo tu potencial como desarrollador web.
+
+
+Durante la presentación en vivo, mostrarás el funcionamiento de tu aplicación, podrás realizar pruebas de las operaciones CRUD y destacar las características más relevantes de tu proyecto. Esta es una oportunidad invaluable para compartir tus logros y recibir feedback de tus compañeros e instructores.
+
+
+Tu participación en este taller será un requisito fundamental para completar el curso de forma exitosa. Valoraremos tu dedicación y esfuerzo al presentar el resultado final de tu proyecto.
+
+
+No importa cuál haya sido la temática de tu proyecto, ya sea que hayas decidido continuar con el mismo grupo del primer trabajo práctico o hayas realizado cambios en tu enfoque o equipo.
+
+
+Lo importante es que presentes el resultado de tu esfuerzo y dedicación.
+
+
+Recuerda seguir las mejores prácticas de programación y diseño para garantizar un código limpio y una interfaz amigable para el usuario. Prepara una presentación clara y concisa, mostrando los puntos fuertes de tu proyecto y resaltando los desafíos que superaste en el proceso de desarrollo.
+
+
+Estamos emocionados por ver sus proyectos.
+
+
+¡Tu participación en la Muestra de Proyectos es clave para tu éxito en el curso!
+

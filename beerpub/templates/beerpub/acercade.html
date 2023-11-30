@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    {% comment %} <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> {% endcomment %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} {# Cargamos la librería #}
+    {% load django_bootstrap5 %}
+  
+    {# CSS Bootstrap #}
+    {% bootstrap_css %}  {% endcomment %}
+  
+    {# Archivos #}
+    {% load static %}
+    <link rel="stylesheet" href="{% static './css/style.acercade.css' %}">
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <title>BEER PUB</title>
+
+</head>
+
+<body>
+    <div class="menu-btn">
+
+        <i class="iconoBoton"><img src="{% static './media/img/btn-amburg.png' %}" alt="" width="55em" height="55em"></i>
+    </div>
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                
+            </div>
+            <!-- <div>
+                
+                <h2 class="cabecera">
+                    Pub -  Cerveceria
+                </h2>
+            </div> -->
+        </header>
+
+        <!-- aca va el show para que aparezca con js el menu -->
+        <nav>
+            <div> <h1> <a href="{% url 'index' %}"> Home</a></h1></div>
+            <div> <h1> <a href="{% url 'acercade' %}">Acerca de </a></h1></div>
+            <div> <h1> <a href="{% url 'localizacion' %}"> Localizacion</a></h1></div>
+            <div> <h1> <a href="{% url 'contacto' %}">Contacto</a></h1></div>
+            <div> <h1> <a href="{% url 'faq' %}">Faq</a></h1></div>
+            <div> <h1> <a href="{% url 'leer' %}">Gestion</a></h1></div>
+          
+    </nav>
+    <div style="width:5px;height:10px;"></div>
+</div>
+<hr>
+<main class="main-acercade">
+    <section class="section-banner">
+
+        <div class="banner">
+        <img src="{% static './media/img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg' %}" alt="" class="tamaño-banner">    
+        </div>
+    </section>
+<section class="section-acercade">
+
+
+<div  class="div-acercade" id="app" >
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+</main>
+
+<footer class="center">
+    <div style="width:5px;height:10px;"></div>
+    
+    <p>Síguenos en nuestras redes. </p>
+    <div style="width:5px;height:10px;"></div>
+    <a class="redsoc"  href="https://www.twitter.com" target="_blank">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.facebook.com" target="_blank">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.pinterest" target="_blank">
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.instagram.com" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a class="redsoc" href="https://www.linkedin.com" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <div style="width:5px;height:10px;"></div>
+<p>Derechos reservados @2023</p>
+<div style="width:5px;height:10px;"></div>
+</footer>
+    {# Archivos #}
+    {% load static %}
+<script src="{% static './js/menu.js' %}"></script>
+<script src="{% static './js/index.js' %}"  type="module"></script>
+
+</body>
+</html>
