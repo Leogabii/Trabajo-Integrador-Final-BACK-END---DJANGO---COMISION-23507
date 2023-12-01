@@ -39,29 +39,17 @@
     </header>
 
     <!-- aca va el show para que aparezca con js el menu -->
-    <nav>
-      <div>
-          <div>
-            <h1 > <a style="font-size: 1em" href="{% url 'index' %}" class="text-muted">   Salir</a></h1>
-          </div>
-        
-  <!--       
-        <h1> <a href="{% url 'index' %}" class="text-muted"> Home</a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'acercade' %}" class="text-muted">Acerca de </a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'localizacion' %}" class="text-muted"> Localizacion</a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'contacto' %}" class="text-muted">Contacto</a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'faq' %}" class="text-muted">Faq</a></h1>
-        </div> -->
-  
-      </nav>
+        <!--Comienzo de la barra de navegación-->
+        <nav>
+          <div> <h1> <a href="{% url 'index' %}"> Home</a></h1></div>
+          <div> <h1> <a href="{% url 'acercade' %}">Acerca de </a></h1></div>
+          <div> <h1> <a href="{% url 'localizacion' %}"> Localizacion</a></h1></div>
+          <div> <h1> <a href="{% url 'contacto' %}">Contacto</a></h1></div>
+          <div> <h1> <a href="{% url 'faq' %}">Faq</a></h1></div>
+          <div> <h1> <a href="{% url 'leer' %}">Gestion</a></h1></div>
+    
+    </nav>
+    <!--Fin de la barra de navegación-->
     </div>
 
     <hr class="bg-white" style="padding:2px; padding-top:0px">
@@ -169,6 +157,6 @@
           return t.replace('Currently:', '<span class="ocultar" class="text-white">Currently:</span>');
         });
       </script>     
-    
+      <script src="{%static './js/menu.js'%}"></script>
   </body>
 </html>

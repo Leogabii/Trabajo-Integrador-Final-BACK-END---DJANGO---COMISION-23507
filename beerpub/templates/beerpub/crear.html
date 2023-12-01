@@ -39,29 +39,17 @@
       </header>
   
       <!-- aca va el show para que aparezca con js el menu -->
+    <!--Comienzo de la barra de navegación-->
     <nav>
-      <div>
-          <div>
-            <h1 > <a style="font-size: 1em" href="{% url 'index' %}" class="text-muted">   Salir</a></h1>
-          </div>
-        
-  <!--       
-        <h1> <a href="{% url 'index' %}" class="text-muted"> Home</a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'acercade' %}" class="text-muted">Acerca de </a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'localizacion' %}" class="text-muted"> Localizacion</a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'contacto' %}" class="text-muted">Contacto</a></h1>
-        </div>
-        <div>
-          <h1> <a href="{% url 'faq' %}" class="text-muted">Faq</a></h1>
-        </div> -->
-  
-      </nav>
+      <div> <h1> <a href="{% url 'index' %}"> Home</a></h1></div>
+      <div> <h1> <a href="{% url 'acercade' %}">Acerca de </a></h1></div>
+      <div> <h1> <a href="{% url 'localizacion' %}"> Localizacion</a></h1></div>
+      <div> <h1> <a href="{% url 'contacto' %}">Contacto</a></h1></div>
+      <div> <h1> <a href="{% url 'faq' %}">Faq</a></h1></div>
+      <div> <h1> <a href="{% url 'leer' %}">Gestion</a></h1></div>
+
+</nav>
+<!--Fin de la barra de navegación-->
     </div>
     <div style="width:5px;height:10px;"></div>
     <hr class="bg-white" style="padding:2px; padding-top:0px">
@@ -156,6 +144,6 @@
       <p style="color:white">Derechos reservados @2023</p>
     <div style="width:5px;height:10px;"></div>
     </footer>
-    
+    <script src="{%static './js/menu.js'%}"></script>
   </body>
 </html>
