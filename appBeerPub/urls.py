@@ -44,19 +44,19 @@ urlpatterns = [
     # La ruta 'indice' en donde se vera la pagina principal del proyecto front end
     path('', BeerpubPpal.as_view(template_name = "beerpub/index.html"), name="index"),
     
-        # La ruta 'detalles' en donde mostraremos una página con los detalles de un jugo o registro 
+        # La ruta 'detalles' en donde mostraremos una página con los detalles de un registro 
     path('beerpub/detalle/<int:pk>', BeerpubDetalle.as_view(template_name = "beerpub/detalles.html"), name='detalles'),
  
-    # La ruta 'crear' en donde mostraremos un formulario para crear un nuevo jugo o registro  
+    # La ruta 'crear' en donde mostraremos un formulario para crear un nuevo registro  
     path('beerpub/crear', BeerpubCrear.as_view(template_name = "beerpub/crear.html"), name='crear'),
  
-    # La ruta 'actualizar' en donde mostraremos un formulario para actualizar un jugo o registro de la Base de Datos 
+    # La ruta 'actualizar' en donde mostraremos un formulario para actualizar un registro de la Base de Datos 
     path('beerpub/editar/<int:pk>', BeerpubActualizar.as_view(template_name = "beerpub/actualizar.html"), name='actualizar'), 
  
-    # La ruta 'eliminar' que usaremos para eliminar un jugo o registro de la Base de Datos 
+    # La ruta 'eliminar' que usaremos para eliminar un  registro de la Base de Datos 
     path('beerpub/eliminar/<int:pk>', BeerpubEliminar.as_view(), name='eliminar'), 
 
-    # La ruta 'momento' en donde listamos todos los registros o jugos de la Base de Datos
+    # La ruta 'momento' en donde listamos todos los registros  de la Base de Datos
     path('beerpub/momentos', BeerpubListado.as_view(template_name = "beerpub/momentos.html"), name='leer'),
 
     # La ruta 'acercade' es donde mostramos el consumo de nuestra API
